@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title>Contato</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contato.css">
+<link rel="stylesheet" href="form.css">
+</head>
+<script language="javascript" src="_javascript/funcoe.js"> </script>
+ 
+<body>
+<div id="Interface">
+ 
+ 
+<header id="cabecalho">
+<hgroup>
+<h1> Contato </h1>
+<h2> Entre Contato </h2>
+</hgroup>
+
+<img  id="icones"src="icones/contato.png"/>
+
+<nav id="menu">
+ <h1>Menu Principal</h1>
+<ul type="disc"> 
+   <li onmouseover="mudaFoto('icones/home2.png')" onmouseout="mudaFoto('icones/project.png')"><a href="index.html">Início</a></li>
+   <li onmouseover="mudaFoto('icones/empresas2.png')" onmouseout="mudaFoto('icones/project.png')"><a href="Empresa.html">Empresa</a></li>
+   <li onmouseover="mudaFoto('icones/portfolio-ico2.png')" onmouseout="mudaFoto('icones/project.png')"  ><a href="portfolio.html">portfolio</a></li>
+   <li onmouseover="mudaFoto('icones/especificacoes-03.png')" onmouseout="mudaFoto('icones/project.png')"><a href="programa.html">Meus Programas</a></li>
+   <li onmouseover="mudaFoto('icones/contato.png')" onmouseout="mudaFoto('icones/project.png')"><a href="Contato.html">Contato</a></li>
+</ul>
+</nav>
+</header>
+<form method="Post" id="fContato" action="clienteServlet">
+<fieldset id="Usuario"><legend>Contato</legend>
+<p><label for="cNome">Nome: </label><input type="text"   name="tNome" value="" id="cNome" size="20" maxlength="20" placeholder="Nome Completo"/></p>
+<p><label for="cEndereco">Endereco: </label><input type="text" name="tEndereco" value="" id="cEndereco" size="20" maxlength="20" placeholder="Endereço"/></p>
+<p><label for="cMail">Email: </label><input type="email" name="tMail" id="cMail" value=""  size="20" maxlength="20" placeholder="Email"/></p>
+<p><label for="cEmpresa">Empresa:</label><input type="text" name="tEmpresa" value="" id="cEmpresa" size="20" maxlength="25" placeholder="Empresa"/></p>
+<p><label for="cCid">Cidade: </label><input type="text" name="tCid" value="" id="cCid" size="" maxlength="20" placeholder="Cidade" list="cidade"/></p>
+<datalist id="cidade">
+<option value="Rio de janeiro"></option>
+<option value="São Paulo"></option>
+<option value="Mina gerais"></option>
+</datalist>
+</fieldset>
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+<p><label for="cUrg">Grau de Urgência:</label>
+Min<input type="range" name="tUrg" value="" id="cUrg" min="0" max="10" step="2">Max</p>
+<p><label for="cMsg">Mensagem:</label>
+<textarea name="tMsg" id="cMsg" cols="35"  rows="5" placeholder="Deixe aqui sua mensagem"></textarea> </p>
+
+<input type="submit" name="botao" value="Enviar" >
+</fieldset>
+
+
+</form>
+<footer id="rodape">
+<p>Copyright 2016 - by Diego Bizerra<br>
+<a href="https://www.facebook.com/diego.bizerradasilva" target="_Bank"> <img src="fotos/facebook2.png"/> </p></a>
+</footer>
+</div>
+</div>
+</body>
+</html>

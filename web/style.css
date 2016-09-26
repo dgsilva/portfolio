@@ -1,0 +1,200 @@
+@charset="UTF-8";
+body{
+	background-image:url("fundotec.jpg");
+	background-size:cover;
+	position:center;
+	
+}
+
+div {
+	
+	width: 860px;
+	background-color: #7AC5CD;
+	margin: -20px auto 0px auto;
+	box-shadow: 1px 1px 10px rgba(255,255,255,.4);
+	background-color:rgba(255,255,255,.5);/*Deixar a pagina do site transparente */
+	padding: 25px; /* serve para descer a pagína do site*/
+	
+
+}
+/*img.img-dir{
+	display:block;
+	float:right
+	serve para deixar a imagem do lado direito
+}*/
+h1{
+	
+	color: white;
+	font-family:arial;
+}
+
+h2{
+	background-color:white;
+	color:#606060 ;
+}
+
+
+
+p{
+	color: blue;
+	text-align:justify;
+	text-indent:50px;
+	font-family:arial;
+	
+}
+
+header img{ /* Imagem do icone */
+	position:absolute;
+	left: 1100px ;
+	top: 30px ;
+}
+
+header {
+	border-bottom : 1px #606060 solid;/* borda */	
+}
+
+header h1{
+	font-family:Arial, sans-serif;
+	font-size:30pt;
+	Color:#606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header h2 {
+	font-family: Arial , sans-serif;
+	Color: #888888;
+	font-size: 15pt;
+	padding:0px;
+	margin-top: 0px;
+}
+a{
+	color: white;
+	
+}
+
+figure.foto-legenda {
+	border: 1px solid;
+	position: relative;
+	border: 4px thin solid white;
+	box-shadow: 5px black;
+	left: auto;	
+	
+}
+
+figure.foto-legenda img {
+	width:100%;
+	height:100%;
+
+	
+	
+	
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position:absolute;
+	top: 0px;
+	background-color:rgba(0,0,0,.4);
+	color:white;
+	width:100%;
+	height:100%;
+	padding: -10px;
+	box-sizing:border-box;
+	transition:opacity 1s;
+	
+} 
+
+
+figure.foto-legenda:hover figcaption {
+opacity: 1;
+
+}
+
+nav {
+	top: -75px;
+	position:relative;
+	display: block;
+	
+}
+
+nav ul {
+	list-style: none;
+	text-transform: uppercase;
+	position:absolute;
+	top: -75px;
+	left: 90px;
+	
+	
+}
+nav li {
+	display: inline-block;/*separa os sub menu*/
+	background-color: black; /*muda a cor do fundo*/
+	padding: 5px;/* para aumenta submenu botões */
+	margin: 5px;
+	transition:background-color 1s;
+	
+}
+nav li:hover{
+	background-color:blue;/*fazer como fosse um slide*/
+}
+nav a{
+	color:blue;/*mudar a cor da letra*/
+	text-decoration:none;/* tira o subliandor*/
+}
+nav h1 {
+	display: none;/* tira o menu principal*/
+}
+nav a:hover{
+	color:white;
+	text-decoration:underline;
+	/*text-decoration:underline;* para deixa sublinhador */
+}
+
+section#corpo { /* SECTION: Cria uma sessão que vai poder conter vários artigos (ARTICLE) ou objetos.*/
+ display: block; 
+ width: 400px; 
+ float: left ;
+ border-right: 1px solid #606060; 
+ padding-right: 15px;
+
+} 
+table{
+	border: 1px solid #606060;
+}
+table td{
+	border:1px solid #606060;
+	padding: 10px ;
+	text-align: center;
+	background-color: #ddddd;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral{/*ASIDE: São conteúdos periféricos, que estão diretamente relacionados ao conteúdo do artigo principal.*/
+	display: block;
+	width: 350px;
+	float: right ;
+}
+
+
+aside#lateral h1{
+	font-family: sans-serif;
+	font-size: 20pt;
+	color:black;
+}
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color:#ffffff;
+	padding: 10px;
+}
+footer {/*FOOTER: É o rodapé da página ou do conteúdo específico.*/
+	clear:both;
+	border-top: 1px solid #606060;
+}
+
+footer p{
+	text-align:center;
+}
